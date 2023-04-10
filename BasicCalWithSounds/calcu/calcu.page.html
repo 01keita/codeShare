@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Basic Calculator</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label class="valueCss">
+      {{value}}
+    </ion-label>
+  </ion-item>
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <ion-button size="default" shape ="round" color="danger" expand ="block" (click)="onButtonPress('C')" (click)="playAudio('C')">Clear</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button size="default" shape ="round" color="danger" expand ="block" (click)="onButtonPress('H')" (click)="playAudio('H')">Half</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button size="default" shape ="round" color="light" expand ="block" (click)="onButtonPress('%')" (click)="playAudio('%')">%</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button size="default" shape ="round" color="light" expand ="block" (click)="onButtonPress('/')" (click)="playAudio('/')">/</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+          <ion-button size="default" shape ="round" color="dark" expand ="block" (click)="onButtonPress(7)" (click)="playAudio(7)">7</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="default" shape ="round" color="dark" expand ="block" (click)="onButtonPress(8)" (click)="playAudio(8)">8</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="default" shape ="round" color="dark" expand ="block" (click)="onButtonPress(9)" (click)="playAudio(9)">9</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="default" shape ="round" color="light" expand ="block" (click)="onButtonPress('*')" (click)="playAudio('*')">*</ion-button>
+        </ion-col>
+      </ion-row>
+
+
+
+      <ion-row>
+        <ion-col>
+          <ion-button size="default" shape ="round" color="dark" expand ="block" (click)="onButtonPress(4)" (click)="playAudio(4)">4</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="default" shape ="round" color="dark" expand ="block" (click)="onButtonPress(5)" (click)="playAudio(5)">5</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="default" shape ="round" color="dark" expand ="block" (click)="onButtonPress(6)" (click)="playAudio(6)">6</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="default" shape ="round" color="light" expand ="block" (click)="onButtonPress('-')" (click)="playAudio('-')">-</ion-button>
+        </ion-col>
+      </ion-row>
+
+
+
+      <ion-row>
+        <ion-col>
+          <ion-button size="default" shape ="round" color="dark" expand ="block" (click)="onButtonPress(1)" (click)="playAudio(1)">1</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="default" shape ="round" color="dark" expand ="block" (click)="onButtonPress(2)" (click)="playAudio(2)">2</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="default" shape ="round" color="dark" expand ="block" (click)="onButtonPress(3)" (click)="playAudio(3)">3</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="default" shape ="round" color="light" expand ="block" (click)="onButtonPress('+')" (click)="playAudio('+')">+</ion-button>
+        </ion-col>
+      </ion-row>
+
+
+
+      <ion-row>
+        <ion-col>
+          <ion-button size="default" shape ="round" color="dark" expand ="block" (click)="onButtonPress(0)" (click)="playAudio(0)">0</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="default" shape ="round" color="dark" expand ="block" (click)="onButtonPress('.')" (click)="playAudio('.')">.</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="default" shape ="round" color="warning" expand ="block" (click)="onButtonPress('D')" (click)="playAudio('D')">Delete</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="default" shape ="round" color="success" expand ="block" (click)="onButtonPress('=')" (click)="playAudio('=')">=</ion-button>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-content>
