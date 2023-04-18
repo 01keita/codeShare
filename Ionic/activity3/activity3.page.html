@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>activity3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        Enter Number 1:
+      </ion-label>
+      <ion-input type="number" placeholder ="No 1"[(ngModel)]="no1">
+      </ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>
+        Enter Number 2:
+      </ion-label>
+      <ion-input type="number"  [(ngModel)]="No2">
+      </ion-input>
+    </ion-item>
+  
+    </ion-list>
+
+
+    <ion-item>
+      <ion-label>
+        Result:
+      </ion-label>
+      <ion-input type="number" placeholder ="Result" [(ngModel)]="result">
+      </ion-input>
+    </ion-item> 
+    
+  <div class="container">
+    <ion-button (click) = "presentActionSheet()">Math</ion-button>
+    <code *ngIf="result">{{result}}</code>
+  </div>
+</ion-content>

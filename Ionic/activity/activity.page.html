@@ -1,0 +1,186 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Santiago</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<!-- <ion-list>
+  <ion-item>
+    <ion-label>
+      Enter Number 1:
+    </ion-label>
+    <ion-input type="number" placeholder ="No 1"[(ngModel)]="no1">
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>
+      Enter Number 2:
+    </ion-label>
+    <ion-input type="number" placeholder ="No 1" [(ngModel)]="no2">
+    </ion-input>
+  </ion-item>
+
+  </ion-list>
+
+  <ion-button (click)="add()">
+    Add
+  </ion-button>
+
+  <ion-item>
+    <ion-label>
+      Result:
+    </ion-label>
+    <ion-input type="number" placeholder ="Result" [(ngModel)]="Result">
+    </ion-input>
+  </ion-item> 
+
+ -->
+
+
+
+
+
+
+  <ion-grid>
+    <ion-row> 
+      <ion-col> 
+        <h1>Button</h1>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row> 
+      <ion-col>
+        <ion-label>Default Button </ion-label>
+        <ion-button expand="{{ expand }}" shape="{{shape}}" fill="{{fill}}" size="{{size}}" color="{{color}}"> Default</ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-label>
+          Expand (Block)
+          <ion-button expand ="block"> Block</ion-button>
+        </ion-label>
+        <ion-label>
+          Expand (Full)
+          <ion-button expand ="full" (click)="expandFull()" (click)="shapeRound()" > Block</ion-button>
+        </ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Shape (Round)</ion-label>
+        <ion-button shape="{{shape}}" (click)="shapeRound()">Shape</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Fill (Clear)</ion-label>
+        <ion-button fill="{{fill}}" (click)="fill_2()">Fill</ion-button>
+      </ion-col>
+      
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Fill (Outline)</ion-label>
+        <ion-button fill="outline">Fill</ion-button>
+      </ion-col>
+      
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Fill (Solid)</ion-label>
+        <ion-button fill="solid">Fill</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Size (Small)</ion-label>
+        <ion-button size="{{size}}" (click)="size_2()">Size</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Size (Large)</ion-label>
+        <ion-button size="large">Size</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Size (Default)</ion-label>
+        <ion-button size="default">size</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Color (Primary)</ion-label>
+        <ion-button color="{{color}}" (click)="color_2()">color</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Color (Secondary)</ion-label>
+        <ion-button color="secondary">color</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Color (Tertiary)</ion-label>
+        <ion-button color="tertiary">color</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Color (Danger)</ion-label>
+        <ion-button color="danger">color</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Color (Warning)</ion-label>
+        <ion-button color="warning">color</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Color (Success)</ion-label>
+        <ion-button color="success">color</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Color (light)</ion-label>
+        <ion-button color="light">color</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Color (Medium)</ion-label>
+        <ion-button color="medium">color</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Color (Dark)</ion-label>
+        <ion-button color="dark">color</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
