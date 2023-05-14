@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>activity2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-button shape = "round" size = "default" color="danger" [routerLink] = "['/home']">Back to Home</ion-button>
+    <ion-item>
+      <ion-label>
+        Enter Number 1:
+      </ion-label>
+      <ion-input type="number" placeholder ="No 1"[(ngModel)]="no1">
+      </ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>
+        Enter Number 2:
+      </ion-label>
+      <ion-input type="number"  [(ngModel)]="No2">
+      </ion-input>
+    </ion-item>
+  
+    </ion-list>
+    <ion-row>
+    <ion-button (click)="add()">
+      Add
+    </ion-button>
+    <ion-button (click)="sub()">
+      Subtract
+    </ion-button>
+    <ion-button (click)="mult()">
+      Multiply
+    </ion-button>
+    <ion-button (click)="div()">
+      Divide
+    </ion-button>
+  </ion-row>
+    <ion-item>
+      <ion-label>
+        Result:
+      </ion-label>
+      <ion-input type="number" placeholder ="Result" [(ngModel)]="Result">
+      </ion-input>
+    </ion-item> 
+  
+  
+  
+</ion-content>

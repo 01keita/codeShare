@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+
+    <ion-list>
+      <ion-row>
+          <ion-col>
+            <ion-button shape = "round" size = "default" color="success" [routerLink] = "['/activity']">Activity 1</ion-button>
+            <ion-button shape = "round" size = "default" color="warning" [routerLink] = "['/activity2']">Activity 2</ion-button>
+            <ion-button shape = "round" size = "default" color="danger" [routerLink] = "['/activity3']">Activity 3</ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button shape = "round" size = "default" color="success" [routerLink] = "['/emp']">Activity 4</ion-button>
+            <ion-button shape = "round" size = "default" color="warning" [routerLink] = "['/activity2']">Activity 5</ion-button>
+            <ion-button shape = "round" size = "default" color="danger" [routerLink] = "['/activity3']">Activity 6</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-list>  
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
+</ion-content>

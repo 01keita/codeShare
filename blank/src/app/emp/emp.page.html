@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Activity 4</ion-title> 
+    <ion-button shape = "round" size = "default" color="danger" [routerLink] = "['/home']">Back to Home</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+
+          <ion-item>
+            <ion-label> Name:</ion-label>
+            <ion-input [(ngModel)] = "Name" placeholder="Enter Name">
+            </ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label> Address:</ion-label>
+            <ion-input [(ngModel)] = "Address" placeholder="Enter Address">
+            </ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-button size=" default" slot="end" color="tertiary" (click) = "user_page(Name, Address)" > 
+              Compute
+            </ion-button>
+           </ion-item>
+
+         </ion-list>
+
+      </ion-col>
+    </ion-row>
+
+
+    <div *ngIf="FhideMe">
+      <ion-row>
+        <ion-col>
+        <ion-item>
+          <ion-label>
+            Days of Work: {{FDoW}}
+          </ion-label>
+        </ion-item> 
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+        <ion-item>
+          <ion-label>
+           Salary per Day: {{FSPD}}
+          </ion-label>
+        </ion-item>  
+        </ion-col>
+      </ion-row>
+        
+      <ion-row>
+        <ion-col>
+        <ion-item>
+          <ion-label>
+           Deductions: {{FDed}}
+          </ion-label>
+        </ion-item> 
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+        <ion-item>
+          <ion-label>
+            Salary:  {{FSal}}
+          </ion-label>
+        </ion-item> 
+        </ion-col>
+      </ion-row>
+  
+    </div>
+  </ion-grid>
+
+</ion-content>

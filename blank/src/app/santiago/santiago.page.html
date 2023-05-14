@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Santiago</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item>
+            <ion-input [(ngModel)] = "number" placeholder="Enter Number"></ion-input>
+
+            <ion-button slot="end" (click)="view_user_info(number)"> 
+              View Functions
+            </ion-button>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              Result: {{showRes}}
+            </ion-label>
+          </ion-item> 
+         </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

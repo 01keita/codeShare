@@ -1,0 +1,13 @@
+<p>
+  {{ data }}
+</p>
+
+<ion-input [(ngModel)] = "number2" placeholder="Enter 2nd Number"></ion-input>
+
+<ion-button (click)="add()">Add</ion-button>
+<ion-button (click)="sub()">Subtract</ion-button>
+<ion-button (click)="mul()">Multiply</ion-button>
+<ion-button (click)="div()">Divide</ion-button>
+
+
+<ion-button color="danger" (click)="cancel_modal()">Cancel </ion-button>
